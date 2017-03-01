@@ -90,13 +90,13 @@ const searchGifs = queryTerms => {
   const queryString = queryTerms.join('+');
   return $j.ajax({
     method: 'GET',
-    url: `http://api.giphy.com/v1/gifs/search?q=${queryString}&limit=10&api_key=dc6zaTOxFJmzC`
+    url: `https://api.giphy.com/v1/gifs/search?q=${queryString}&limit=10&api_key=dc6zaTOxFJmzC`
   })
 }
 
 const fetchTrendingGifs = () => {
   return $j.ajax({
     method: 'GET',
-    url: 'http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC'
+    url: 'https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC'
   })
 }
